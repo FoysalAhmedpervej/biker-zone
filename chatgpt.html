@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker zone</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-poppins {
+            font-family: "Poppins", system-ui;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary': '#E76F51',                
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Header -->
+   <header class="md:container mx-auto px-4">
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="font-bold text-xl">Biker zone</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1 hidden md:flex">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+                <li><button class="btn bg-bike-primary text-white"><a>Login</a></button></li>
+              </ul>
+              <!-- Mobile Menu Toggle -->
+              <div class="md:hidden dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu dropdown-content p-2 shadow z-10 bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                  <li><a class="btn bg-bike-primary text-white">Login</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+       <div class="bg-[#E76F511A] w-full p-6 lg:p-24 flex flex-col lg:flex-row justify-center items-center">
+        <!-- Text -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 class="font-bold text-3xl lg:text-5xl">Ride-on R15 V4 with Smile</h2>  
+          <p class="mt-5 text-sm lg:text-xs">Amet minim mollit non deserunt ullamco <br> 
+            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>  
+            <button class="mt-7 btn bg-bike-primary text-white"><a>Purchase</a></button>    
+        </div>
+        <div class="p-5 w-full lg:w-1/2">
+          <img
+          src="images/slider/bike1.png"
+          class="w-full max-w-xs lg:max-w-none lg:w-[400px]" />
+        </div>
+       </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="">❮</a>
+          <a href="#slide2" class="">❯</a>
+        </div>
+      </div>
+      <!-- Additional slides with similar structure -->
+      <!-- You can replicate the structure of slide1 for slides 2, 3, and 4, with their respective content -->
+    </div>
+   </header>
+   <!-- Main Section -->
+    <main>
+
+    </main>
+</body>
+</html>
